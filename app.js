@@ -13,7 +13,7 @@
       }
 
       const payload = await response.json();
-      const version = payload.version || "1.0.0";
+      const version = payload.version || "1.0.3";
       const downloadUrl = payload.downloadUrl || "#download";
       const publishedAt = payload.publishedAt ? new Date(payload.publishedAt) : null;
 

@@ -41,11 +41,12 @@
   <main id="inicio" class="page">
     <section class="hero">
       <div class="hero-copy">
-        <span class="eyebrow">Atualizacao, biblioteca e playback em um so lugar</span>
-        <h1>Uma pagina de apresentacao mais forte para o <span>MidiaDeck</span>.</h1>
+        <span class="eyebrow">Atualizacao, integridade e playback em um so lugar</span>
+        <h1><span>MidiaDeck 1.0.3</span> para operacao ao vivo mais confiavel.</h1>
         <p class="lead">
           Ideal para igreja, evento, apresentacao e operacao ao vivo. Organize midias, controle a fila,
-          use runlists, soundboard e audio de fundo com um fluxo claro para 1 ou 2 monitores.
+          use runlists, soundboard e audio de fundo com um fluxo claro para 1 ou 2 monitores,
+          agora com cache local validado para reduzir impacto de antivirus durante a operacao.
         </p>
 
         <div class="hero-actions">
@@ -95,8 +96,8 @@
                 <p>mpv, ffmpeg e ffprobe publicados junto com o instalador.</p>
               </div>
               <div class="screen-card">
-                <span class="card-kicker">Atualizacao segura</span>
-                <p>version.json aponta para o instalador mais recente.</p>
+                <span class="card-kicker">Autorreparo local</span>
+                <p>Manifesto SHA-256 e cache local ajudam o app a recuperar binaries essenciais.</p>
               </div>
               <div class="screen-card">
                 <span class="card-kicker">Entrada rapida</span>
@@ -110,8 +111,8 @@
 
     <section id="recursos" class="section">
       <div class="section-heading">
-        <span class="eyebrow">Por que essa pagina fica melhor</span>
-        <h2>O MidiaDeck precisa parecer um produto pronto para uso, nao apenas um download.</h2>
+        <span class="eyebrow">Por que a 1.0.3 importa</span>
+        <h2>O MidiaDeck precisa parecer e agir como produto pronto para cliente, nao apenas um download.</h2>
       </div>
 
       <div class="feature-grid">
@@ -124,8 +125,12 @@
           <p>O site publica o <code>version.json</code> e o app verifica a nova versao no startup sem travar a UI.</p>
         </article>
         <article class="feature-card">
+          <h3>Cache local com integridade</h3>
+          <p>A 1.0.3 valida os binaries com manifesto SHA-256 e prefere a copia em <code>LocalAppData</code> durante a execucao.</p>
+        </article>
+        <article class="feature-card">
           <h3>Distribuicao simples</h3>
-          <p>Cloudflare Pages ou GitHub Pages servem os arquivos estaticos; o instalador vem da URL gravada no `version.json`.</p>
+          <p>Cloudflare Pages ou GitHub Pages servem os arquivos estaticos; o instalador vem da URL gravada no <code>version.json</code>.</p>
         </article>
         <article class="feature-card">
           <h3>Uso guiado</h3>
@@ -232,7 +237,7 @@
         </details>
         <details>
           <summary>Onde ficam os binarios do app?</summary>
-          <p>O release publica a pasta <code>binaries</code> junto com o executavel, para manter mpv, ffmpeg e ffprobe ao lado do programa.</p>
+          <p>O release publica a pasta <code>binaries</code> junto com o executavel e a versao 1.0.3 tambem mantem uma copia validada em <code>%LocalAppData%\MidiaDeck\binaries</code>.</p>
         </details>
       </div>
     </section>
