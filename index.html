@@ -3,249 +3,278 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="description" content="MidiaDeck: controle de exibicao, fila, runlists, soundboard e audio de fundo para producoes profissionais em 1 ou 2 monitores.">
-  <title>MidiaDeck | Controle de Midia para 1 ou 2 Monitores</title>
+  <meta name="description" content="MidiaDeck: player para som, video e midia ao vivo em igrejas, eventos, cultos e apresentacoes.">
+  <title>MidiaDeck | Player para Som e Midia ao Vivo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
 </head>
 <body>
-  <div class="bg-orb bg-orb-a"></div>
-  <div class="bg-orb bg-orb-b"></div>
-  <div class="noise"></div>
-
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="MidiaDeck">
-      <span class="brand-mark">MD</span>
-      <span class="brand-text">
-        <strong>MidiaDeck</strong>
-        <small>Controle de midia profissional</small>
-      </span>
-    </a>
-
-    <nav class="topnav" aria-label="Navegacao principal">
-      <a href="#recursos">Recursos</a>
-      <a href="#como-usar">Como usar</a>
-      <a href="#video">Video</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-
-    <a class="button button-ghost" href="https://chat.whatsapp.com/BKkRZhcOjjgFWc6kxTQQoB" target="_blank" rel="noopener noreferrer">
-      Grupo WhatsApp
-    </a>
-  </header>
-
-  <main id="inicio" class="page">
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">Atualizacao, integridade e playback em um so lugar</span>
-        <h1><span>MidiaDeck 1.0.3</span> para operacao ao vivo mais confiavel.</h1>
-        <p class="lead">
-          Ideal para igreja, evento, apresentacao e operacao ao vivo. Organize midias, controle a fila,
-          use runlists, soundboard e audio de fundo com um fluxo claro para 1 ou 2 monitores,
-          agora com cache local validado para reduzir impacto de antivirus durante a operacao.
-        </p>
-
-        <div class="hero-actions">
-          <a id="downloadCta" class="button button-primary" href="#download">Baixar agora</a>
-          <a class="button button-secondary" href="https://www.youtube.com/watch?v=XHr6xEjg9ZA" target="_blank" rel="noopener noreferrer">
-            Ver video de instalacao
-          </a>
-        </div>
-
-        <div class="hero-meta">
-          <div class="meta-card">
-            <span class="meta-label">Versao atual</span>
-            <strong id="versionLabel">Carregando...</strong>
-          </div>
-          <div class="meta-card">
-            <span class="meta-label">Distribuicao</span>
-            <strong>Cloudflare Pages / GitHub Pages</strong>
-          </div>
-          <div class="meta-card">
-            <span class="meta-label">Atualizacao</span>
-            <strong>version.json automatico</strong>
-          </div>
+  <div class="app-shell">
+    <header class="desktop-bar">
+      <div class="brand-group">
+        <div class="app-badge">MD</div>
+        <div>
+          <strong>MidiaDeck</strong>
+          <small>player para som e midia ao vivo</small>
         </div>
       </div>
 
-      <div class="hero-panel">
-        <div class="panel-frame">
-          <div class="panel-top">
-            <span class="traffic traffic-red"></span>
-            <span class="traffic traffic-yellow"></span>
-            <span class="traffic traffic-green"></span>
-            <span class="panel-title">MidiaDeck / preview</span>
-          </div>
-          <div class="panel-screen">
-            <div class="screen-card screen-card-main">
-              <span class="card-kicker">Runlists</span>
-              <h3>Operacao clara para apresentacao</h3>
-              <p>Fila, playlist, soundboard, audio de fundo e troca de saida em uma interface pensada para palco.</p>
+      <nav class="menu-bar" aria-label="Navegacao principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#download">Downloads</a>
+        <a href="#apoio">Apoiar</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="menu-action" href="https://chat.whatsapp.com/BKkRZhcOjjgFWc6kxTQQoB" target="_blank" rel="noopener noreferrer">
+        Grupo WhatsApp
+      </a>
+    </header>
+
+    <main class="desktop-workspace" id="inicio">
+      <section class="hero-grid">
+        <article class="window-card player-window">
+          <div class="window-titlebar">
+            <div class="window-lights">
+              <span class="light close"></span>
+              <span class="light min"></span>
+              <span class="light max"></span>
             </div>
-            <div class="screen-grid">
-              <div class="screen-card">
-                <span class="card-kicker">1 ou 2 monitores</span>
-                <p>Controle de saida e apresentacao ajustados ao seu fluxo.</p>
-              </div>
-              <div class="screen-card">
-                <span class="card-kicker">Binarios incluidos</span>
-                <p>mpv, ffmpeg e ffprobe publicados junto com o instalador.</p>
-              </div>
-              <div class="screen-card">
-                <span class="card-kicker">Autorreparo local</span>
-                <p>Manifesto SHA-256 e cache local ajudam o app a recuperar binaries essenciais.</p>
-              </div>
-              <div class="screen-card">
-                <span class="card-kicker">Entrada rapida</span>
-                <p>WhatsApp do grupo e video de instalacao sempre visiveis.</p>
-              </div>
+            <span class="window-title">Video do MidiaDeck</span>
+            <span class="window-state">Ao vivo</span>
+          </div>
+
+          <div class="player-stage">
+            <div class="player-toolbar">
+              <span class="mode-chip">Veja funcionando</span>
+              <span class="mono-chip">som, video e midia no mesmo lugar</span>
+            </div>
+
+            <div class="video-frame">
+              <iframe
+                title="Video de apresentacao do MidiaDeck"
+                src="https://www.youtube.com/embed/piDJW7KM8pM"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="transport-bar">
+              <span class="transport-button">TOCAR</span>
+              <span class="transport-button">FILA</span>
+              <span class="transport-button">TELAS</span>
+              <span class="transport-status">Feito para quem precisa operar sem complicacao</span>
             </div>
           </div>
+        </article>
+
+        <aside class="window-card control-window">
+          <div class="window-titlebar compact">
+            <span class="window-title">Painel do Operador</span>
+            <span class="window-state ok">Pronto</span>
+          </div>
+
+          <div class="control-stack">
+            <div class="eyebrow">Para igrejas, eventos, cultos e apresentacoes</div>
+            <h1>Organize som, videos e imagens sem se perder na hora ao vivo.</h1>
+            <p class="lead">
+              MidiaDeck ajuda o operador a deixar tudo pronto antes de comecar: louvores,
+              vinhetas, videos, imagens, playlists, audio de fundo e saida para uma ou duas telas.
+              Menos correria, mais controle.
+            </p>
+
+            <div class="action-row">
+              <a id="downloadCta" class="primary-action" href="#download">Downloads</a>
+              <a class="secondary-action" href="https://www.youtube.com/watch?v=piDJW7KM8pM" target="_blank" rel="noopener noreferrer">
+                Ver como funciona
+              </a>
+            </div>
+
+            <div class="status-grid">
+              <div class="status-box">
+                <span class="label">Versao publica</span>
+                <strong id="versionLabel">Carregando...</strong>
+              </div>
+              <div class="status-box">
+                <span class="label">Arquivo</span>
+                <strong id="installerLabel">Carregando...</strong>
+              </div>
+              <div class="status-box">
+                <span class="label">Atualizado em</span>
+                <strong id="publishedAtLabel">Carregando...</strong>
+              </div>
+            </div>
+
+            <div class="system-list">
+              <div class="system-item">
+                <span class="signal"></span>
+                <div>
+                  <strong>Mais tranquilidade no dia do evento</strong>
+                  <p>O MidiaDeck guarda arquivos importantes no computador para ajudar a abrir tudo de forma mais segura.</p>
+                </div>
+              </div>
+              <div class="system-item">
+                <span class="signal"></span>
+                <div>
+                  <strong>Uma ou duas telas</strong>
+                  <p>Prepare o que vai para o projetor, TV ou tela de apoio sem misturar com a area do operador.</p>
+                </div>
+              </div>
+              <div class="system-item">
+                <span class="signal"></span>
+                <div>
+                  <strong>Aviso de nova versao</strong>
+                  <p>Quando tiver atualizacao, o programa ajuda voce a encontrar o instalador mais recente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="console-section" id="recursos">
+        <div class="section-head">
+          <span class="eyebrow">Recursos para operar melhor</span>
+          <h2>O essencial para tocar midias com calma durante a programacao.</h2>
         </div>
-      </div>
-    </section>
 
-    <section id="recursos" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">Por que a 1.0.3 importa</span>
-        <h2>O MidiaDeck precisa parecer e agir como produto pronto para cliente, nao apenas um download.</h2>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card">
-          <h3>Apresentacao profissional</h3>
-          <p>Layout com foco em hierarquia, contraste forte e leitura rapida em tela grande ou celular.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Atualizacao automatica</h3>
-          <p>O site publica o <code>version.json</code> e o app verifica a nova versao no startup sem travar a UI.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Cache local com integridade</h3>
-          <p>A 1.0.3 valida os binaries com manifesto SHA-256 e prefere a copia em <code>LocalAppData</code> durante a execucao.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Distribuicao simples</h3>
-          <p>Cloudflare Pages ou GitHub Pages servem os arquivos estaticos; o instalador vem da URL gravada no <code>version.json</code>.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Uso guiado</h3>
-          <p>Video de instalacao, grupo do WhatsApp e instrucoes de uso ficam no mesmo lugar.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="video" class="section split">
-      <div class="video-copy">
-        <span class="eyebrow">Video de instalacao e uso</span>
-        <h2>Adapte o video do YouTube para mostrar o fluxo do programa.</h2>
-        <p>
-          Deixe a pagina pronta para quem quer instalar rapido, entender a interface e entrar no grupo.
-          O card ao lado abre o video direto no YouTube e funciona em qualquer hospedagem estatic a.
-        </p>
-
-        <div class="inline-links">
-          <a class="button button-secondary" href="https://www.youtube.com/watch?v=XHr6xEjg9ZA" target="_blank" rel="noopener noreferrer">
-            Abrir video
-          </a>
-          <a class="button button-ghost" href="https://chat.whatsapp.com/BKkRZhcOjjgFWc6kxTQQoB" target="_blank" rel="noopener noreferrer">
-            Entrar no grupo
-          </a>
+        <div class="feature-console">
+          <article class="feature-panel">
+            <span class="panel-kicker">BIBLIOTECA</span>
+            <h3>Tudo separado</h3>
+            <p>Coloque videos, audios, imagens e vinhetas em um lugar facil de achar.</p>
+          </article>
+          <article class="feature-panel">
+            <span class="panel-kicker">OPERACAO</span>
+            <h3>Fila pronta</h3>
+            <p>Deixe a sequencia preparada antes do culto, reuniao, live ou apresentacao.</p>
+          </article>
+          <article class="feature-panel">
+            <span class="panel-kicker">AO VIVO</span>
+            <h3>Menos sustos</h3>
+            <p>Use um fluxo pensado para operador: encontrar, preparar e tocar sem ficar cacando arquivo.</p>
+          </article>
+          <article class="feature-panel">
+            <span class="panel-kicker">SUPORTE</span>
+            <h3>Ajuda por perto</h3>
+            <p>Veja o video de apresentacao e entre no grupo para acompanhar novidades e tirar duvidas.</p>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <div class="video-card">
-        <iframe
-          title="Video de instalacao do MidiaDeck"
-          src="https://www.youtube.com/embed/XHr6xEjg9ZA"
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
+      <section class="split-console" id="download">
+        <article class="window-card file-window">
+          <div class="window-titlebar compact">
+            <span class="window-title">Downloads</span>
+            <span class="window-state">Oficial</span>
+          </div>
 
-    <section id="como-usar" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">Como usar</span>
-        <h2>Fluxo simples para a pessoa abrir, importar e executar.</h2>
-      </div>
+          <div class="download-panel">
+            <div class="download-line">
+              <span class="label">Instalador principal</span>
+              <strong id="downloadVersionLabel">MidiaDeck para Windows</strong>
+            </div>
+            <div class="download-line">
+              <span class="label">Para quem e</span>
+              <strong>Operadores de som, midia e projecao</strong>
+            </div>
+            <div class="download-line">
+              <span class="label">Recomendacao</span>
+              <strong>Baixe sempre por este site</strong>
+            </div>
 
-      <div class="steps">
-        <article class="step-card">
-          <span>01</span>
-          <h3>Instale o programa</h3>
-          <p>Baixe a versao publicada a partir do link do `version.json` e execute o instalador. Ele fecha a versao antiga antes de substituir os arquivos.</p>
+            <a id="downloadButton" class="primary-action full" href="#" target="_blank" rel="noopener noreferrer">
+              Baixar instalador
+            </a>
+            <a class="secondary-action full" href="https://www.youtube.com/watch?v=piDJW7KM8pM" target="_blank" rel="noopener noreferrer">
+              Ver antes de instalar
+            </a>
+          </div>
         </article>
-        <article class="step-card">
-          <span>02</span>
-          <h3>Abra a biblioteca</h3>
-          <p>Importe midias, organize playlists, runlists e slots rapidos no ambiente que vai ser usado no evento.</p>
-        </article>
-        <article class="step-card">
-          <span>03</span>
-          <h3>Operacao ao vivo</h3>
-          <p>Use fila, saídas, soundboard, audio de fundo e controle de telas com foco na apresentacao.</p>
-        </article>
-      </div>
-    </section>
 
-    <section id="download" class="section cta-section">
-      <div class="cta-copy">
-        <span class="eyebrow">Download oficial</span>
-        <h2>Baixe a versao mais recente sem procurar link manualmente.</h2>
-        <p>O botao abaixo e atualizado a partir do <code>version.json</code> publicado no site.</p>
-      </div>
+        <article class="window-card steps-window">
+          <div class="window-titlebar compact">
+            <span class="window-title">Como comecar</span>
+            <span class="window-state ok">3 passos</span>
+          </div>
 
-      <div class="cta-box">
+          <div class="steps-list">
+            <div class="step-row">
+              <span>01</span>
+              <div>
+                <strong>Baixe e instale</strong>
+                <p>Use o botao de downloads e siga o instalador do Windows.</p>
+              </div>
+            </div>
+            <div class="step-row">
+              <span>02</span>
+              <div>
+                <strong>Separe suas midias</strong>
+                <p>Adicione videos, audios e imagens, depois organize playlists e listas do evento.</p>
+              </div>
+            </div>
+            <div class="step-row">
+              <span>03</span>
+              <div>
+                <strong>Toque na hora certa</strong>
+                <p>Use fila, telas e audio de fundo para seguir a programacao com mais seguranca.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="support-strip" id="apoio">
         <div>
-          <span class="meta-label">Instalador</span>
-          <strong id="installerLabel">Carregando...</strong>
+          <span class="eyebrow">Apoio opcional</span>
+          <h2>Gostou do MidiaDeck?</h2>
+          <p>
+            Se o programa ajudou sua igreja, evento ou equipe de midia, voce pode apoiar o projeto.
+            E totalmente opcional.
+          </p>
+          <p class="support-note">Chave ou contato para apoio: alan.xdparker@gmail.com</p>
         </div>
-        <div>
-          <span class="meta-label">Publicado em</span>
-          <strong id="publishedAtLabel">Carregando...</strong>
+        <a class="secondary-action support-action" href="mailto:alan.xdparker@gmail.com?subject=Quero%20apoiar%20o%20MidiaDeck&body=Ola%2C%20quero%20saber%20como%20posso%20fazer%20uma%20doacao%20para%20o%20MidiaDeck." target="_blank" rel="noopener noreferrer">
+          Quero apoiar
+        </a>
+      </section>
+
+      <section class="console-section" id="faq">
+        <div class="section-head">
+          <span class="eyebrow">Duvidas rapidas</span>
+          <h2>Respostas simples para baixar, atualizar e usar no dia a dia.</h2>
         </div>
-        <a id="downloadButton" class="button button-primary full" href="#" target="_blank" rel="noopener noreferrer">
-          Baixar instalador
-        </a>
-        <a class="button button-secondary full" href="https://chat.whatsapp.com/BKkRZhcOjjgFWc6kxTQQoB" target="_blank" rel="noopener noreferrer">
-          Grupo WhatsApp
-        </a>
-      </div>
-    </section>
 
-    <section id="faq" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">Perguntas frequentes</span>
-        <h2>Respostas curtas para reduzir atrito na instalacao.</h2>
-      </div>
+        <div class="faq-console">
+          <details open>
+            <summary>Posso usar em igreja, escola, evento ou apresentacao?</summary>
+            <p>Sim. O MidiaDeck foi pensado para quem precisa tocar midias ao vivo com organizacao e rapidez.</p>
+          </details>
+          <details>
+            <summary>Como vejo se existe uma versao nova?</summary>
+            <p>O programa pode avisar quando houver atualizacao, e este site sempre aponta para o download oficial.</p>
+          </details>
+          <details>
+            <summary>A doacao e obrigatoria?</summary>
+            <p>Nao. O apoio e apenas para quem quiser ajudar o projeto a continuar evoluindo.</p>
+          </details>
+        </div>
+      </section>
+    </main>
 
-      <div class="faq-list">
-        <details open>
-          <summary>O instalador fecha a versao antiga sozinho?</summary>
-          <p>Sim. O Inno Setup usa <code>CloseApplications=yes</code> e filtra <code>MidiaDeck.App.exe</code> para evitar arquivo travado.</p>
-        </details>
-        <details>
-          <summary>Como o app sabe que ha atualizacao?</summary>
-          <p>Ele faz uma requisicao assicrona para <code>version.json</code>, compara a versao remota com a local e mostra o aviso apenas se houver novidade.</p>
-        </details>
-        <details>
-          <summary>Onde ficam os binarios do app?</summary>
-          <p>O release publica a pasta <code>binaries</code> junto com o executavel e a versao 1.0.3 tambem mantem uma copia validada em <code>%LocalAppData%\MidiaDeck\binaries</code>.</p>
-        </details>
+    <footer class="footer-bar">
+      <span>MidiaDeck | som, video e midia para operacao ao vivo</span>
+      <div class="footer-links">
+        <a href="https://www.youtube.com/watch?v=piDJW7KM8pM" target="_blank" rel="noopener noreferrer">Ver video</a>
+        <a href="mailto:alan.xdparker@gmail.com?subject=Quero%20apoiar%20o%20MidiaDeck">Apoiar</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>MidiaDeck. Feito para apresentacao de midia em operacao real.</p>
-    <a href="https://www.youtube.com/watch?v=XHr6xEjg9ZA" target="_blank" rel="noopener noreferrer">Video de instalacao</a>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
