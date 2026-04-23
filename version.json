@@ -1,6 +1,7 @@
-{
-  "version": "1.0.3",
-  "downloadUrl": "https://github.com/gdp65468-del/Md-public/releases/download/v1.0.3/MidiaDeck-Setup-win-x64-1.0.3.exe",
-  "notesUrl": "https://github.com/gdp65468-del/Md-public/releases/tag/v1.0.3",
-  "publishedAt": "2026-04-11T22:56:51.5491465Z"
+﻿{
+    "version":  "1.4.0",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.0/MidiaDeck-Setup-win-x64-1.4.0.exe",
+    "publishedAt":  "2026-04-23T21:24:14.1582764Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.0",
+    "notesContent":  "# MidiaDeck 1.4.0\n\n- controle remoto reforcado com biblioteca completa, audio, fila e runlists mais estaveis\n- nova aba de arquivos remotos no desktop para gerenciar uploads vindos do celular\n- miniaturas e interface operacional refinadas no desktop e no mobile\n- notas da versao agora aparecem no app em texto nativo, sem depender da pagina bruta do GitHub\n- pipeline de release atualizado para publicar notesContent no version.json e sincronizar a release publica"
 }
