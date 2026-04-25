@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.4.0",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.0/MidiaDeck-Setup-win-x64-1.4.0.exe",
-    "publishedAt":  "2026-04-23T21:24:14.1582764Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.0",
-    "notesContent":  "# MidiaDeck 1.4.0\n\n- controle remoto reforcado com biblioteca completa, audio, fila e runlists mais estaveis\n- nova aba de arquivos remotos no desktop para gerenciar uploads vindos do celular\n- miniaturas e interface operacional refinadas no desktop e no mobile\n- notas da versao agora aparecem no app em texto nativo, sem depender da pagina bruta do GitHub\n- pipeline de release atualizado para publicar notesContent no version.json e sincronizar a release publica"
+    "version":  "1.4.1",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.1/MidiaDeck-Setup-win-x64-1.4.1.exe",
+    "publishedAt":  "2026-04-25T04:07:26.3356991Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.1",
+    "notesContent":  "# MidiaDeck 1.4.1\n\n- miniatura da runlist agora carrega sob demanda ao selecionar um item sem thumbnail\n- operacao foi desacoplada da fila para executar audio, video e imagem direto\n- itens quebrados da runlist sao limpos automaticamente quando o arquivo nao existe mais no disco\n- ajustes visuais e de execucao refinados na lateral e na area operacional"
 }
