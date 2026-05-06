@@ -1,0 +1,38 @@
+MidiaDeck - avisos publicos de componentes de terceiros
+=======================================================
+
+O MidiaDeck pode acompanhar ferramentas livres de midia para tocar videos,
+analisar arquivos e gerar miniaturas. Esses componentes sao usados como
+programas externos e continuam pertencendo aos seus respectivos projetos.
+
+Componentes citados
+-------------------
+
+mpv
+- Site: https://mpv.io
+- Codigo-fonte: https://github.com/mpv-player/mpv
+- Licenca/copyright: https://github.com/mpv-player/mpv/blob/master/Copyright
+- Uso no MidiaDeck: executavel externo para reproducao de video e audio.
+
+FFmpeg e ffprobe
+- Site: https://ffmpeg.org
+- Codigo-fonte: https://ffmpeg.org/download.html
+- Informacoes legais: https://ffmpeg.org/legal.html
+- Uso no MidiaDeck: metadados, miniaturas e apoio ao processamento de midia.
+
+Gyan.dev FFmpeg builds
+- Builds Windows: https://www.gyan.dev/ffmpeg/builds/
+- Uso no MidiaDeck: referencia para builds Windows de FFmpeg/ffprobe.
+
+Resumo
+------
+
+O MidiaDeck nao se apresenta como autor de mpv, FFmpeg, ffprobe ou bibliotecas
+auxiliares. Ao distribuir o aplicativo com esses binarios, mantemos creditos,
+textos de licenca e links para o codigo-fonte correspondente dos projetos
+livres.
+
+Dentro do aplicativo Windows, estas informacoes ficam na tela Ajuda, na secao
+"Codigo aberto e licencas".
+
+Ultima revisao: 2026-05-06
