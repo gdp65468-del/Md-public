@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.4.4",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.4/MidiaDeck-Setup-win-x64-1.4.4.exe",
-    "publishedAt":  "2026-05-06T16:16:27.2871196Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.4",
-    "notesContent":  "# MidiaDeck 1.4.4\n\n## Destaques\n\n- Dual Player simplificado na barra principal e no painel lateral.\n- Botao de mute na operacao ao vivo para audio/video.\n- Fechamento sincronizado do Dual Player: ao fechar uma janela pelo X, o par e encerrado junto.\n- Pareamento mobile mais estavel: celular ja confiavel reconecta ao ler o QR sem precisar remover e aprovar de novo.\n- Avisos publicos de licencas e componentes de terceiros, incluindo mpv/FFmpeg, no app, instalador e site.\n\n## Correcoes\n\n- Corrige reconexao do app Android ficando em aguardando aprovacao mesmo quando o aparelho ja estava confiavel.\n- Restaura o botao de minimizar/restaurar video na barra principal.\n- Atualiza o app Android para envio no Google Play Console como 1.4.4 (codigo 144)."
+    "version":  "1.4.5",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.5/MidiaDeck-Setup-win-x64-1.4.5.exe",
+    "publishedAt":  "2026-05-07T17:04:25.5481046Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.5",
+    "notesContent":  "# MidiaDeck 1.4.5\n\n## Correcoes\n\n- Evita que falhas em atualizacoes de estado do player derrubem o MidiaDeck quando o mpv encerra ou quando um video chega ao fim.\n- Protege eventos de tela dupla para registrar erros de assinantes sem fechar o aplicativo principal.\n- Registra logs dedicados do mpv por sessao em `%LOCALAPPDATA%\\MidiaDeck\\logs`, facilitando diagnostico de codec, driver de video e encerramentos inesperados.\n- Registra codigo de saida, midia ativa e caminho do log quando o processo do mpv termina.\n\n## Diagnostico\n\n- Em computadores onde alguns videos fecham o app, colete `midiadeck-*.log` e `mpv-*.log` em `%LOCALAPPDATA%\\MidiaDeck\\logs`.\n"
 }
