@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.4.5",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.5/MidiaDeck-Setup-win-x64-1.4.5.exe",
-    "publishedAt":  "2026-05-07T17:04:25.5481046Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.5",
-    "notesContent":  "# MidiaDeck 1.4.5\n\n## Correcoes\n\n- Evita que falhas em atualizacoes de estado do player derrubem o MidiaDeck quando o mpv encerra ou quando um video chega ao fim.\n- Protege eventos de tela dupla para registrar erros de assinantes sem fechar o aplicativo principal.\n- Registra logs dedicados do mpv por sessao em `%LOCALAPPDATA%\\MidiaDeck\\logs`, facilitando diagnostico de codec, driver de video e encerramentos inesperados.\n- Registra codigo de saida, midia ativa e caminho do log quando o processo do mpv termina.\n\n## Diagnostico\n\n- Em computadores onde alguns videos fecham o app, colete `midiadeck-*.log` e `mpv-*.log` em `%LOCALAPPDATA%\\MidiaDeck\\logs`.\n"
+    "version":  "1.4.6",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.6/MidiaDeck-Setup-win-x64-1.4.6.exe",
+    "publishedAt":  "2026-05-23T18:39:56.8049041Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.6",
+    "notesContent":  "# MidiaDeck 1.4.6\n\n## PDF na Runlist\n\n- Adiciona viewer interno de PDF para itens da Runlist.\n- Permite abrir PDF em Principal, Segunda, Terceira ou Dupla.\n- Adiciona controles de PDF no MidiaDeck: página anterior, próxima página, minimizar, restaurar, mover e fechar.\n- Adiciona controle remoto de PDF no Android com status, avançar, voltar e fechar.\n- Mantém opção para abrir PDF pelo programa padrão do Windows quando configurado.\n\n## Atualização\n\n- Corrige o versionamento do release para garantir que o app publicado use a mesma versão do version.json."
 }
