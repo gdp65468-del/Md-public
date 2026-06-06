@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.4.6",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.6/MidiaDeck-Setup-win-x64-1.4.6.exe",
-    "publishedAt":  "2026-05-23T18:39:56.8049041Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.6",
-    "notesContent":  "# MidiaDeck 1.4.6\n\n## PDF na Runlist\n\n- Adiciona viewer interno de PDF para itens da Runlist.\n- Permite abrir PDF em Principal, Segunda, Terceira ou Dupla.\n- Adiciona controles de PDF no MidiaDeck: página anterior, próxima página, minimizar, restaurar, mover e fechar.\n- Adiciona controle remoto de PDF no Android com status, avançar, voltar e fechar.\n- Mantém opção para abrir PDF pelo programa padrão do Windows quando configurado.\n\n## Atualização\n\n- Corrige o versionamento do release para garantir que o app publicado use a mesma versão do version.json."
+    "version":  "1.4.8",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.8/MidiaDeck-Setup-win-x64-1.4.8.exe",
+    "publishedAt":  "2026-06-06T11:14:31.2416164Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.8",
+    "notesContent":  "MidiaDeck 1.4.8: audio MVP com busca, favoritos, fila e tags editaveis; overlays leves na runlist; melhorias de tela dupla/projecao; mixer mobile com volume em tempo real."
 }
