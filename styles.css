@@ -414,6 +414,36 @@ code {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.release-console {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.release-panel {
+  min-height: 13rem;
+  padding: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.8rem;
+  background: linear-gradient(180deg, #20272f, #151a20);
+}
+
+.release-panel.highlight {
+  border-color: rgba(255, 180, 108, 0.7);
+  background: linear-gradient(180deg, rgba(255, 138, 42, 0.18), #151a20 62%);
+}
+
+.release-panel h3 {
+  margin: 0.55rem 0 0;
+  font-size: 1.08rem;
+}
+
+.release-panel p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .panel-kicker {
   color: var(--accent-soft);
 }
@@ -603,6 +633,10 @@ code {
   .feature-console {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .release-console {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
@@ -615,7 +649,8 @@ code {
   }
 
   .status-grid,
-  .feature-console {
+  .feature-console,
+  .release-console {
     grid-template-columns: 1fr;
   }
 
