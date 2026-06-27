@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.4.8",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.8/MidiaDeck-Setup-win-x64-1.4.8.exe",
-    "publishedAt":  "2026-06-06T11:14:31.2416164Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.8",
-    "notesContent":  "MidiaDeck 1.4.8: audio MVP com busca, favoritos, fila e tags editaveis; overlays leves na runlist; melhorias de tela dupla/projecao; mixer mobile com volume em tempo real."
+    "version":  "1.4.9",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.4.9/MidiaDeck-Setup-win-x64-1.4.9.exe",
+    "publishedAt":  "2026-06-27T21:40:57.7281549Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.4.9",
+    "notesContent":  "# MidiaDeck 1.4.9\n\n## Audio e tela dupla\n\n- Corrige a duplicidade de audio ao reproduzir varios videos consecutivos em tela dupla.\n- Mantem o player espelho sem audio e reaplica a rota correta apos cada novo carregamento.\n- Separa o status de Video e Audio BG para mostrar os dois simultaneamente, sem piscadas.\n- Adiciona controles compactos para pausar, retomar ou parar somente o Audio BG.\n\n## Interface\n\n- Reorganiza a tela de Audio para exibir mais faixas, com filtros recolhidos e barra inferior informativa.\n- Adiciona loop com indicacao clara de repeticao da faixa atual.\n- Exibe thumbnails de video da Runlist em formato 16:9.\n- Usa azul no progresso de audio, turquesa no progresso de video e gradiente quando ambos estao ativos.\n\n## Transicoes\n\n- Adiciona fade in e fade out separados para audio e video, configuraveis entre 0 e 10 segundos.\n- Aplica fades ao Audio BG, biblioteca, Runlist, Monitor 2 e Dual Player sem alterar o volume global do Windows.\n- Cancela transicoes anteriores em cliques rapidos e preserva o volume-alvo para evitar players presos em zero.\n"
 }
