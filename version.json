@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.6.1",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.1/MidiaDeck-Setup-win-x64-1.6.1.exe",
-    "publishedAt":  "2026-07-24T22:42:39.7644446Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.1",
-    "notesContent":  "# MidiaDeck 1.6.1\n\n## Runlist\n\n- Nova ação **Adicionar pasta**, que salva somente o caminho escolhido, sem importar os arquivos da pasta.\n- Ao executar um item do tipo Pasta, o MidiaDeck abre o diretório no Explorador de Arquivos do Windows.\n- Arquivos adicionados por **Todos os arquivos** agora são abertos pelo aplicativo padrão definido no Windows.\n- Itens antigos que haviam sido classificados incorretamente como Programa são reconhecidos automaticamente, sem precisar adicioná-los novamente.\n\n## Compatibilidade\n\n- Reconhecimento ampliado para formatos de apresentação como PPTM, PPSM, POTX, POTM, PPAM, SLDX e SLDM.\n- Arquivos de formatos desconhecidos permanecem identificados como Arquivo externo, sem serem encaminhados ao reprodutor de mídia.\n- A validação de segurança dos itens adicionados explicitamente como Programa foi preservada.\n"
+    "version":  "1.6.2",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.2/MidiaDeck-Setup-win-x64-1.6.2.exe",
+    "publishedAt":  "2026-08-02T22:19:56.5959457Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.2",
+    "notesContent":  "# MidiaDeck 1.6.2\n\n## Plugins e aplicativos\n\n- Novo catálogo para instalar plugins ZIP e adicionar atalhos para programas EXE.\n- Atalhos EXE passam a usar automaticamente o ícone do programa.\n- Correção ao salvar imagens personalizadas de atalhos.\n- Instalação e substituição de plugins agora mostram carregamento e tratam pastas incompletas.\n- Compatibilidade com plugins executáveis, incluindo a Roleta da Sorte."
 }
