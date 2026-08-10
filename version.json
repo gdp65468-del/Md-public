@@ -1,7 +1,7 @@
-﻿{
-    "version":  "1.6.2",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.2/MidiaDeck-Setup-win-x64-1.6.2.exe",
-    "publishedAt":  "2026-08-02T22:19:56.5959457Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.2",
-    "notesContent":  "# MidiaDeck 1.6.2\n\n## Plugins e aplicativos\n\n- Novo catálogo para instalar plugins ZIP e adicionar atalhos para programas EXE.\n- Atalhos EXE passam a usar automaticamente o ícone do programa.\n- Correção ao salvar imagens personalizadas de atalhos.\n- Instalação e substituição de plugins agora mostram carregamento e tratam pastas incompletas.\n- Compatibilidade com plugins executáveis, incluindo a Roleta da Sorte."
+{
+    "version":  "1.6.10",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.10/MidiaDeck-Setup-win-x64.exe",
+    "publishedAt":  "2026-08-09T17:12:15Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.10",
+    "notesContent":  "## MidiaDeck 1.6.10\n\n- Bíblia integrada ao aplicativo desktop, com livros, capítulos, versículos e projeção.\n- Bíblia Totem com QR Code, controle por tablet e tomada de controle administrativa com PIN.\n- Projeção bíblica com texto adaptativo e roteamento para tela principal, segunda saída ou tela dupla.\n- Itens de áudio e vídeo da Runlist podem ser adicionados à fila pelo menu de contexto.\n- Reforços de segurança e estabilidade no controle remoto."
 }
