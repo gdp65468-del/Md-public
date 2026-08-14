@@ -1,7 +1,7 @@
 {
-    "version":  "1.6.10",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.10/MidiaDeck-Setup-win-x64.exe",
-    "publishedAt":  "2026-08-09T17:12:15Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.10",
-    "notesContent":  "## MidiaDeck 1.6.10\n\n- Bíblia integrada ao aplicativo desktop, com livros, capítulos, versículos e projeção.\n- Bíblia Totem com QR Code, controle por tablet e tomada de controle administrativa com PIN.\n- Projeção bíblica com texto adaptativo e roteamento para tela principal, segunda saída ou tela dupla.\n- Itens de áudio e vídeo da Runlist podem ser adicionados à fila pelo menu de contexto.\n- Reforços de segurança e estabilidade no controle remoto."
+    "version":  "1.6.11",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.11/MidiaDeck-Setup-win-x64.exe",
+    "publishedAt":  "2026-08-14T22:11:39Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.11",
+    "notesContent":  "## MidiaDeck 1.6.11\n\n- Corrigida a duplicação ao criar roteiros bíblicos.\n- Roteiros do Bíblia Totem agora ficam salvos no MidiaDeck após desconectar o tablet.\n- Interface do Bíblia Totem ajustada para celular.\n- Solicitações de fundo musical exibem aviso global por cinco segundos e notificação no MidiaDeck."
 }
