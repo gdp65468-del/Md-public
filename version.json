@@ -1,7 +1,7 @@
 {
-    "version":  "1.6.11",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.11/MidiaDeck-Setup-win-x64.exe",
-    "publishedAt":  "2026-08-14T22:11:39Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.11",
-    "notesContent":  "## MidiaDeck 1.6.11\n\n- Corrigida a duplicação ao criar roteiros bíblicos.\n- Roteiros do Bíblia Totem agora ficam salvos no MidiaDeck após desconectar o tablet.\n- Interface do Bíblia Totem ajustada para celular.\n- Solicitações de fundo musical exibem aviso global por cinco segundos e notificação no MidiaDeck."
+    "version":  "1.6.12",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.12/MidiaDeck-Setup-win-x64.exe",
+    "publishedAt":  "2026-08-25T14:45:00.0000000Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.12",
+    "notesContent":  "# MidiaDeck 1.6.12\n\n## Bíblia\n\n- Seleção de livros, capítulos e versículos mais prática.\n- Modos compacto e visual para versículos.\n- Navegação por setas e projeção bíblica mais fluida.\n\n## Fila e áudio\n\n- Item atual e próximo item pendente estáveis para áudio e vídeo.\n- Cabeçalho de áudio com a faixa atual e próxima somente quando programada.\n\n## Tela de Espera\n\n- Horário de término para cálculo automático.\n- Contadores acima de uma hora com horas, minutos e segundos."
 }
