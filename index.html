@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MidiaDeck: player para som, video e midia ao vivo em igrejas, eventos, cultos e apresentacoes.">
-  <title>MidiaDeck | Player para Som e Midia ao Vivo</title>
+  <meta name="description" content="MidiaDeck: software profissional para organizar, preparar e projetar mídia durante eventos ao vivo.">
+  <title>MidiaDeck | Controle suas mídias durante o evento</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,31 +15,29 @@
   <div class="app-shell">
     <header class="desktop-bar">
       <div class="brand-group">
-        <div class="app-badge">MD</div>
+        <img class="app-logo" src="./iconemd.png" alt="MidiaDeck">
         <div>
           <strong>MidiaDeck</strong>
           <small>player para som e midia ao vivo</small>
         </div>
       </div>
 
-      <nav class="menu-bar" aria-label="Navegacao principal">
-        <a href="#inicio">Inicio</a>
+      <nav class="menu-bar" aria-label="Navegação principal">
+        <a href="#produto">Produto</a>
         <a href="#recursos">Recursos</a>
         <a href="#novidades">Novidades</a>
-        <a href="#download">Downloads</a>
-        <a href="#licencas">Licenças</a>
-        <a href="#apoio">Apoiar</a>
-        <a href="#faq">FAQ</a>
-        <a href="#privacidade">Privacidade</a>
+        <a href="./downloads.html">Downloads</a>
+        <a href="./licenses.html">Licenças</a>
+        <a href="#apoio">Suporte</a>
       </nav>
 
-      <a class="menu-action" href="https://chat.whatsapp.com/BKkRZhcOjjgFWc6kxTQQoB" target="_blank" rel="noopener noreferrer">
-        Grupo WhatsApp
+      <a class="menu-action" href="./downloads.html">
+        Baixar grátis
       </a>
     </header>
 
     <main class="desktop-workspace" id="inicio">
-      <section class="hero-grid">
+      <section class="hero-grid" id="produto">
         <article class="window-card player-window">
           <div class="window-titlebar">
             <div class="window-lights">
@@ -85,20 +83,23 @@
 
           <div class="control-stack">
             <div class="eyebrow">Para igrejas, eventos, cultos e apresentacoes</div>
-            <h1>Organize som, videos e imagens sem se perder na hora ao vivo.</h1>
+            <div class="hero-badge"><span class="signal"></span> MidiaDeck <span id="heroVersionLabel">1.6.13</span> disponível</div>
+            <h1>Controle suas mídias sem perder o controle do evento.</h1>
             <p class="lead">
-              MidiaDeck ajuda o operador a deixar tudo pronto antes de comecar: louvores,
-              vinhetas, videos, imagens, playlists, audio de fundo e saida para uma ou duas telas.
-              Menos correria, mais controle.
+              Prepare, organize e projete vídeos, imagens, áudio e playlists em uma interface criada
+              para operação ao vivo. Menos correria, mais controle.
             </p>
 
             <div class="action-row">
-              <a id="downloadCta" class="primary-action" href="#download">Downloads</a>
+              <a id="downloadCta" class="primary-action" href="./downloads.html">Baixar para Windows</a>
               <a class="secondary-action" href="https://www.youtube.com/watch?v=piDJW7KM8pM" target="_blank" rel="noopener noreferrer">
                 Ver como funciona
               </a>
             </div>
 
+            <div class="trust-row" aria-label="Características do produto">
+              <span>✓ Gratuito</span><span>✓ Open source</span><span>✓ Windows</span><span>✓ Offline</span>
+            </div>
             <div class="status-grid">
               <div class="status-box">
                 <span class="label">Versao publica</span>
@@ -141,6 +142,33 @@
         </aside>
       </section>
 
+      <section class="demo-section" id="demonstracao">
+        <div class="section-head">
+          <span class="eyebrow">Veja o produto em ação</span>
+          <h2>Uma operação clara em cada tela.</h2>
+        </div>
+        <div class="demo-tabs" role="tablist" aria-label="Demonstração do MidiaDeck">
+          <button class="demo-tab active" role="tab" aria-selected="true" data-demo="library">Biblioteca</button>
+          <button class="demo-tab" role="tab" aria-selected="false" data-demo="queue">Fila</button>
+          <button class="demo-tab" role="tab" aria-selected="false" data-demo="projection">Projeção</button>
+          <button class="demo-tab" role="tab" aria-selected="false" data-demo="screens">Telas</button>
+        </div>
+        <div class="demo-preview" role="tabpanel">
+          <div class="demo-screen" data-screen="library">
+            <img class="demo-capture" src="./asset/midiadeckcapa.jpeg" alt="Visão geral do MidiaDeck com biblioteca e controles de operação" loading="lazy">
+          </div>
+          <div class="demo-screen" data-screen="queue" hidden>
+            <img class="demo-capture" src="./asset/suafilapronta.jpeg" alt="Runlist do MidiaDeck com itens organizados para execução" loading="lazy">
+          </div>
+          <div class="demo-screen" data-screen="projection" hidden>
+            <img class="demo-capture" src="./asset/biblia.jpeg" alt="Projeção bíblica do MidiaDeck com versículo em destaque" loading="lazy">
+          </div>
+          <div class="demo-screen" data-screen="screens" hidden>
+            <img class="demo-capture" src="./asset/organize%20runlist.jpeg" alt="Runlist do MidiaDeck com destinos de tela selecionáveis" loading="lazy">
+          </div>
+        </div>
+      </section>
+
       <section class="console-section" id="recursos">
         <div class="section-head">
           <span class="eyebrow">Recursos para operar melhor</span>
@@ -163,18 +191,17 @@
             <h3>Menos sustos</h3>
             <p>Use um fluxo pensado para operador: encontrar, preparar e tocar sem ficar cacando arquivo.</p>
           </article>
-          <article class="feature-panel">
-            <span class="panel-kicker">SUPORTE</span>
-            <h3>Ajuda por perto</h3>
-            <p>Veja o video de apresentacao e entre no grupo para acompanhar novidades e tirar duvidas.</p>
-          </article>
+          <article class="feature-panel"><span class="panel-kicker">PLAYLISTS</span><h3>Fluxo preparado</h3><p>Monte sequências para cada momento e mantenha a operação previsível.</p></article>
+          <article class="feature-panel"><span class="panel-kicker">TELAS</span><h3>Destino certo</h3><p>Escolha a tela principal, secundária ou dupla sem expor a interface.</p></article>
+          <article class="feature-panel"><span class="panel-kicker">SEGURANÇA</span><h3>Operação offline</h3><p>Tenha seus arquivos no computador e menos dependência durante o evento.</p></article>
         </div>
       </section>
 
       <section class="console-section" id="novidades">
         <div class="section-head">
           <span class="eyebrow">Nova atualizacao</span>
-          <h2>O que mudou no MidiaDeck v1.6.12.</h2>
+          <h2>O que mudou no MidiaDeck v1.6.13.</h2>
+          <a class="section-link" href="./changelog.html">Ver changelog completo →</a>
         </div>
 
         <div class="release-console">
@@ -242,7 +269,7 @@
           </div>
         </article>
 
-        <article class="window-card steps-window">
+        <article class="window-card steps-window" id="workflow">
           <div class="window-titlebar compact">
             <span class="window-title">Como comecar</span>
             <span class="window-state ok">3 passos</span>
@@ -379,7 +406,8 @@
       <section class="console-section" id="privacidade">
         <div class="section-head">
           <span class="eyebrow">Midiadeck Controle</span>
-          <h2>Política de Privacidade</h2>
+          <h2>Privacidade por padrão</h2>
+          <a class="section-link" href="./privacy.html">Ler política completa →</a>
         </div>
 
         <article class="window-card">
@@ -493,8 +521,8 @@
       <div class="footer-links">
         <a href="https://www.youtube.com/watch?v=piDJW7KM8pM" target="_blank" rel="noopener noreferrer">Ver video</a>
         <a href="mailto:alan.xdparker@gmail.com?subject=Quero%20apoiar%20o%20MidiaDeck">Apoiar</a>
-        <a href="#licencas">Licenças</a>
-        <a href="#privacidade">Política de Privacidade</a>
+        <a href="./licenses.html">Licenças</a>
+        <a href="./privacy.html">Política de Privacidade</a>
       </div>
     </footer>
   </div>

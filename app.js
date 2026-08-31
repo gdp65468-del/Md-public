@@ -5,6 +5,7 @@
   const downloadButton = document.getElementById("downloadButton");
   const downloadCta = document.getElementById("downloadCta");
   const downloadVersionLabel = document.getElementById("downloadVersionLabel");
+  const heroVersionLabel = document.getElementById("heroVersionLabel");
   const publicRepoReleasesUrl = "https://github.com/gdp65468-del/Md-public/releases/latest";
   const latestReleaseApiUrl = "https://api.github.com/repos/gdp65468-del/Md-public/releases/latest";
 
@@ -13,9 +14,9 @@
     const downloadUrl = payload.downloadUrl || publicRepoReleasesUrl;
     const publishedAt = payload.publishedAt ? new Date(payload.publishedAt) : null;
 
-    versionLabel.textContent = version === "mais recente" ? version : `v${version}`;
-    installerLabel.textContent = downloadUrl.split("/").pop() || "Pagina de downloads";
-    publishedAtLabel.textContent = publishedAt && !Number.isNaN(publishedAt.getTime())
+    if (versionLabel) versionLabel.textContent = version === "mais recente" ? version : `v${version}`;
+    if (installerLabel) installerLabel.textContent = downloadUrl.split("/").pop() || "Pagina de downloads";
+    if (publishedAtLabel) publishedAtLabel.textContent = publishedAt && !Number.isNaN(publishedAt.getTime())
       ? publishedAt.toLocaleString("pt-BR")
       : "Site oficial";
     if (downloadVersionLabel) {
@@ -23,15 +24,36 @@
         ? "MidiaDeck para Windows"
         : `MidiaDeck v${version} para Windows`;
     }
-    downloadButton.href = downloadUrl;
-    downloadButton.textContent = version === "mais recente"
-      ? "Abrir downloads"
-      : `Baixar MidiaDeck v${version}`;
-    downloadCta.href = downloadUrl;
-    downloadCta.textContent = version === "mais recente"
-      ? "Abrir downloads"
-      : `Downloads v${version}`;
+    if (heroVersionLabel && version !== "mais recente") {
+      heroVersionLabel.textContent = `v${version}`;
+    }
+    if (downloadButton) {
+      downloadButton.href = downloadUrl;
+      downloadButton.textContent = version === "mais recente"
+        ? "Abrir downloads"
+        : `Baixar MidiaDeck v${version}`;
+    }
+    if (downloadCta) {
+      downloadCta.href = downloadUrl;
+      downloadCta.textContent = version === "mais recente"
+        ? "Abrir downloads"
+        : `Downloads v${version}`;
+    }
   }
+
+  document.querySelectorAll(".demo-tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.dataset.demo;
+      document.querySelectorAll(".demo-tab").forEach((item) => {
+        const active = item === tab;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      document.querySelectorAll(".demo-screen").forEach((screen) => {
+        screen.hidden = screen.dataset.screen !== target;
+      });
+    });
+  });
 
   async function loadLatestReleaseFromGitHub() {
     const response = await fetch(latestReleaseApiUrl, { cache: "no-store" });
