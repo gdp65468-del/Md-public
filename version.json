@@ -1,7 +1,7 @@
-{
-  "version": "1.6.13",
-  "downloadUrl": "https://github.com/gdp65468-del/Md-public/releases/download/v1.6.13/MidiaDeck-Setup-win-x64-with-binaries.exe",
-  "publishedAt": "2026-08-31T00:00:00Z",
-  "notesUrl": "https://github.com/gdp65468-del/Md-public/releases/tag/v1.6.13",
-  "notesContent": "Principais melhorias desta versão:\n\n- Fade de áudio e vídeo mais suave, com encerramento correto ao chegar a zero.\n- Botão Parar aplica o esmaecimento; Fechar encerra imediatamente.\n- Atalhos de teclado e tooltips mais claros para a operação ao vivo.\n- Aplicação de wallpapers em monitores individuais e restauração padrão.\n- Seleção de monitor padrão ao adicionar itens na fila e na Bíblia.\n- Melhor identificação dos monitores renomeados no MidiaDeck.\n- Ajustes visuais em botões, diálogos, fila e telas de projeção."
+﻿{
+    "version":  "1.7.0",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.7.0/MidiaDeck-Setup-win-x64-1.7.0.exe",
+    "publishedAt":  "2026-09-24T20:01:37.3768372Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.7.0",
+    "notesContent":  "# MidiaDeck 1.7.0\n\n- Controle nativo de PowerPoint na Runlist, com passador configurável e modo de apresentação em tela dupla.\n- Melhorias de projeção, seleção de saídas, Bíblia, Wallpapers, tela de espera e controles de mídia.\n- Plugin Brave Output para abrir links em uma saída dedicada.\n- Ajustes de estabilidade em scroll, fades de áudio e vídeo, menus e controles visuais."
 }
