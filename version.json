@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.7.0",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.7.0/MidiaDeck-Setup-win-x64-1.7.0.exe",
-    "publishedAt":  "2026-09-24T20:01:37.3768372Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.7.0",
-    "notesContent":  "# MidiaDeck 1.7.0\n\n- Controle nativo de PowerPoint na Runlist, com passador configurável e modo de apresentação em tela dupla.\n- Melhorias de projeção, seleção de saídas, Bíblia, Wallpapers, tela de espera e controles de mídia.\n- Plugin Brave Output para abrir links em uma saída dedicada.\n- Ajustes de estabilidade em scroll, fades de áudio e vídeo, menus e controles visuais."
+    "version":  "1.7.2",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.7.2/MidiaDeck-Setup-win-x64-1.7.2.exe",
+    "publishedAt":  "2026-09-29T21:02:14.1714042Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.7.2",
+    "notesContent":  "# MidiaDeck 1.7.2\n\n- Lyrics Studio e projetos .mdsong com letras sincronizadas, modo somente letra e retorno dos cantores.\n- Slideshow de imagens em um único item da Runlist, com transições, repetição e navegação manual.\n- Versões bíblicas ARC, NVT, NAA e ARA offline no pacote privado.\n- Melhorias em Coletâneas, Operação Global, saídas, fila, Runlist e controle remoto Android.\n- Correções de identificação de Runlists, reprodução de slideshows e estabilidade geral."
 }
