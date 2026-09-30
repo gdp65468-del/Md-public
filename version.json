@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "1.7.2",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.7.2/MidiaDeck-Setup-win-x64-1.7.2.exe",
-    "publishedAt":  "2026-09-29T21:02:14.1714042Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.7.2",
-    "notesContent":  "# MidiaDeck 1.7.2\n\n- Lyrics Studio e projetos .mdsong com letras sincronizadas, modo somente letra e retorno dos cantores.\n- Slideshow de imagens em um único item da Runlist, com transições, repetição e navegação manual.\n- Versões bíblicas ARC, NVT, NAA e ARA offline no pacote privado.\n- Melhorias em Coletâneas, Operação Global, saídas, fila, Runlist e controle remoto Android.\n- Correções de identificação de Runlists, reprodução de slideshows e estabilidade geral."
+    "version":  "1.7.3",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.7.3/MidiaDeck-Setup-win-x64-1.7.3.exe",
+    "publishedAt":  "2026-09-30T17:53:00.9623227Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.7.3",
+    "notesContent":  "# MidiaDeck 1.7.3\n\n- Modo Avançado real para apresentações PDF e PowerPoint, com primeiro slide, cronômetros, notas e status.\n- Pré-visualização de apresentações atualizada ao avançar ou voltar slides.\n- Fundo musical dedicado para apresentações, com volume independente e rampa segura.\n- Controle de volume do fundo musical pelas teclas físicas do celular.\n- Melhorias no pareamento, controle remoto, fila, Runlist e sincronização em tempo real.\n- Ajuda contextual e tutoriais nas abas principais."
 }
