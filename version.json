@@ -1,7 +1,7 @@
-﻿{
-    "version":  "1.7.3",
-    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.7.3/MidiaDeck-Setup-win-x64-1.7.3.exe",
-    "publishedAt":  "2026-09-30T17:53:00.9623227Z",
-    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.7.3",
-    "notesContent":  "# MidiaDeck 1.7.3\n\n- Modo Avançado real para apresentações PDF e PowerPoint, com primeiro slide, cronômetros, notas e status.\n- Pré-visualização de apresentações atualizada ao avançar ou voltar slides.\n- Fundo musical dedicado para apresentações, com volume independente e rampa segura.\n- Controle de volume do fundo musical pelas teclas físicas do celular.\n- Melhorias no pareamento, controle remoto, fila, Runlist e sincronização em tempo real.\n- Ajuda contextual e tutoriais nas abas principais."
+{
+  "version": "1.8.0",
+  "downloadUrl": "https://github.com/gdp65468-del/Md-public/releases/download/v1.8.0/MidiaDeck-Setup-win-x64-1.8.0.exe",
+  "publishedAt": "2026-11-02T23:00:00Z",
+  "notesUrl": "https://github.com/gdp65468-del/Md-public/releases/tag/v1.8.0",
+  "notesContent": "# MidiaDeck 1.8.0\n\n- Fundos b\u00edblicos com imagens, v\u00eddeos MP4 e gradientes nativos.\n- Pr\u00e9via segura, slideshow e reordena\u00e7\u00e3o de listas aprimorados.\n- Overlays de texto com novo salvamento de ajustes padr\u00e3o.\n- Biblioteca, buscas, ajuda e atualiza\u00e7\u00f5es refinadas."
 }
