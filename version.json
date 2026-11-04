@@ -1,7 +1,7 @@
-{
-  "version": "1.8.0",
-  "downloadUrl": "https://github.com/gdp65468-del/Md-public/releases/download/v1.8.0/MidiaDeck-Setup-win-x64-1.8.0.exe",
-  "publishedAt": "2026-11-02T23:00:00Z",
-  "notesUrl": "https://github.com/gdp65468-del/Md-public/releases/tag/v1.8.0",
-  "notesContent": "# MidiaDeck 1.8.0\n\n- Fundos b\u00edblicos com imagens, v\u00eddeos MP4 e gradientes nativos.\n- Pr\u00e9via segura, slideshow e reordena\u00e7\u00e3o de listas aprimorados.\n- Overlays de texto com novo salvamento de ajustes padr\u00e3o.\n- Biblioteca, buscas, ajuda e atualiza\u00e7\u00f5es refinadas."
+﻿{
+    "version":  "1.8.1",
+    "downloadUrl":  "https://github.com/gdp65468-del/Md-public/releases/download/v1.8.1/MidiaDeck-Setup-win-x64-1.8.1.exe",
+    "publishedAt":  "2026-11-04T21:19:00.2198506Z",
+    "notesUrl":  "https://github.com/gdp65468-del/Md-public/releases/tag/v1.8.1",
+    "notesContent":  "# MidiaDeck 1.8.1\n\n## Overlays de imagem e texto\n\n- Novo editor compartilhado para overlays de imagem e texto, com prÃ©via real do conteÃºdo.\n- Modos **Ao aplicar** e **Ao vivo**, com estado de rascunho, alteraÃ§Ãµes pendentes, salvar, aplicar, descartar e cancelar.\n- PrÃ©via com transparÃªncia quadriculada, imagem real e miniatura estÃ¡tica de fundos de vÃ­deo usando o cache existente.\n- Grade de posicionamento com nove pontos, dimensionamento, proporÃ§Ã£o, encaixe, opacidade e controles avanÃ§ados.\n- Ajustes de texto com fonte, tamanho, cor, alinhamento, sombra, caixa atrÃ¡s do texto e quebra de linha.\n- Fundo transparente identificado explicitamente e separado do fundo da BÃ­blia.\n- PadrÃµes separados para imagem e texto, com geometria normalizada e inclusÃ£o opcional do fundo.\n\n## ProjeÃ§Ã£o e operaÃ§Ã£o\n\n- AtualizaÃ§Ãµes de texto, tamanho e posiÃ§Ã£o preservam a composiÃ§Ã£o e o vÃ­deo sempre que possÃ­vel.\n- O editor ao vivo evita atualizar a saÃ­da a cada movimento do mouse durante o arraste da prÃ©via lateral.\n- Em **Ao vivo**, a posiÃ§Ã£o final Ã© consolidada quando o operador solta o mouse.\n- Arraste direto na janela de projeÃ§Ã£o, Runlist, fila, roteamento e reproduÃ§Ã£o principal permanecem preservados.\n\n## PrÃ©via e mÃ­dia\n\n- PrÃ©via segura mantÃ©m a miniatura e o texto disponÃ­veis para itens internos, sem exigir um arquivo fÃ­sico indevido.\n- Slideshow, aÃ§Ãµes da Biblioteca, campos de pesquisa, notificaÃ§Ãµes e controles de mÃ­dia permanecem compatÃ­veis com a operaÃ§Ã£o existente.\n\n## Compatibilidade e validaÃ§Ã£o\n\n- Dados antigos continuam sendo carregados sem migraÃ§Ã£o obrigatÃ³ria.\n- Fundos de imagem, vÃ­deo, gradiente e transparÃªncia continuam disponÃ­veis.\n- CompilaÃ§Ã£o validada sem erros ou avisos.\n- SuÃ­te automatizada validada com 341 testes aprovados.\n"
 }
