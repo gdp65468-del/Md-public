@@ -1,7 +1,7 @@
-﻿{
-    "version": "1.8.1",
-    "downloadUrl": "https://github.com/gdp65468-del/Md-public/releases/download/v1.8.1/MidiaDeck-Setup-win-x64-1.8.1.exe",
-    "publishedAt": "2026-11-04T21:19:00.2198506Z",
-    "notesUrl": "https://github.com/gdp65468-del/Md-public/releases/tag/v1.8.1",
-    "notesContent": "# MidiaDeck 1.8.1\n\n## Principais novidades\n\n- Editor compartilhado para overlays de imagem e texto, com prévia real do conteúdo.\n- Modos Ao aplicar e Ao vivo, com rascunho, salvar, aplicar, descartar e cancelar.\n- Prévia com transparência quadriculada, imagem real e miniatura estática de fundos de vídeo.\n- Grade de posicionamento, dimensionamento, proporção, encaixe, opacidade e ajustes avançados.\n- Ajustes de texto com fonte, tamanho, cor, alinhamento, sombra, caixa atrás do texto e quebra de linha.\n- Padrões separados para imagem e texto, com geometria normalizada e inclusão opcional do fundo.\n- No modo Ao vivo, o arraste da prévia lateral aplica a posição final ao soltar o mouse, evitando tremores.\n- Runlist, fila, roteamento, reprodução principal, slideshow e fundos de projeção preservados.\n\n## Compatibilidade\n\n- Dados antigos continuam sendo carregados sem migração obrigatória.\n- Fundos de imagem, vídeo, gradiente e transparência continuam disponíveis.\n- Suíte automatizada validada com 341 testes aprovados.\n"
+{
+  "version": "1.8.2",
+  "downloadUrl": "https://github.com/gdp65468-del/Md-public/releases/download/v1.8.2/MidiaDeck-Setup-win-x64-1.8.2.exe",
+  "publishedAt": "2026-11-10T14:01:39.7722467Z",
+  "notesUrl": "https://github.com/gdp65468-del/Md-public/releases/tag/v1.8.2",
+  "notesContent": "# MidiaDeck 1.8.2\n\n## Preview de louvor\n\n- A preview inicia silenciada e exige ativacao explicita do audio.\n- Saida e volume da preview sao independentes da projecao publica.\n- Alternancia entre projecao formatada e letra completa para consulta e copia.\n- Primeira frase preparada antes do inicio do audio para abrir mais rapido.\n\n## Biblia e operacao\n\n- Campos de cor mais compactos, com indicador visual fixo e suporte a transparencia.\n- Mensagem de orientacao ao usar Marcar como preparado na Previa Segura.\n\n## Estabilidade\n\n- Carregamento de fundos dimensionado a saida para reduzir espera e consumo.\n- Preservadas as previas de midia, MPV, Runlist, Safe Preview e projecao publica.\n"
 }
